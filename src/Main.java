@@ -24,7 +24,18 @@ public class Main {
     public static void main(String[] args) {
         int nParam = 1;
         if (args.length >= nParam){
-            File input  = new File
+            File input  = new File(args[0]);
+            if (input.exists()){
+                String returnS = "";
+                try {
+                    BufferedReader br = new BufferedReader(new FileReader(input));
+                    String riga = "";
+                }
+                catch (Exception e){
+                }
+
+            }
+
         }
     }
 }
